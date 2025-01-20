@@ -50,6 +50,9 @@ jobs:
   dependency-submission:
 
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        java: [ '8' ]
     permissions:
       contents: write
 
